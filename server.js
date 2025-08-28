@@ -3,11 +3,21 @@ const express = require('express');
 const cors = require('cors');
 
 const app = express();
+const corsOptions = {
+  origin: [
+    'http://localhost:5173',
+    'https://backend-back.exzgdz.easypanel.host'
+    // Adicione outros domínios do frontend se necessário
+  ],
+  credentials: true,
+};
+app.use(cors(corsOptions));
 app.use(cors());
 app.use(express.json());
 const port = 3001;
 
 const connectionString = 'postgres://postgres:123Lucas@easypanel.librarymatch.com.br:5433/freelance?sslmode=disable';
+
 
 // Endpoint para registrar venda
 app.post('/gofashion/venda', async (req, res) => {
