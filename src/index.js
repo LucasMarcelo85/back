@@ -30,7 +30,8 @@ app.use((0, cors_1.default)({
         var allowedOrigins = [
             "https://backend-front.exzgdz.easypanel.host/",
             "http://localhost:5173",
-            "http://localhost:3000",
+            "http://localhost:3000", // Adicione a URL do seu frontend de produção aqui
+        
         ];
         // Permitir requisições sem origem (ex: aplicações nativas)
         if (!origin) {
