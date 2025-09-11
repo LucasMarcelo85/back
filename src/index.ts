@@ -33,7 +33,7 @@ app.use(
 
       // Domínios permitidos em produção
       const allowedOrigins = [
-        "https://backend-front.exzgdz.easypanel.host/",
+        "https://backend-front.exzgdz.easypanel.host",
         "http://localhost:5173",
         "http://localhost:3000",
       ];
