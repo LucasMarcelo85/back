@@ -1,14 +1,14 @@
-# Dockerfile para o backend (Node.js + Express + Prisma)
+# Backend: Node.js + Express + Prisma
 FROM node:20-alpine
 
 # Diretório de trabalho
 WORKDIR /app
 
-# Copia os arquivos de dependências
+# Copia arquivos de dependência
 COPY package.json package-lock.json* ./
 
-# Instala as dependências
-RUN npm install --production
+# Instala dependências de produção
+RUN npm ci --only=production
 
 # Copia o restante do código
 COPY . .
@@ -16,8 +16,8 @@ COPY . .
 # Gera o Prisma Client
 RUN npx prisma generate
 
-# Expõe a porta padrão (ajuste se necessário)
-EXPOSE 3001
+# Expõe a porta (use a mesma do seu app, ou PORT do ambiente)
+EXPOSE 3000
 
-# Comando para iniciar a aplicação
-CMD ["npm", "start"]
+# Inicia a aplicação diretamente com node (mais seguro em Docker)
+CMD ["node", "dist/index.js"]
