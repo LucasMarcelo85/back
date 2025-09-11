@@ -3644,3 +3644,13 @@
 2025-09-11 11:19:01:191 [35mhttp[39m: [35mGET /api/categories 304 167ms - IP: ::1[39m
 2025-09-11 11:19:01:191 [35mhttp[39m: [35mGET /api/products 304 1352ms - IP: ::1[39m
 2025-09-11 11:19:02:192 [35mhttp[39m: [35mGET /api/products 304 600ms - IP: ::1[39m
+2025-09-11 11:25:06:256 [35mhttp[39m: [35mGET /api/categories 304 1097ms - IP: ::1[39m
+2025-09-11 11:25:06:256 [35mhttp[39m: [35mGET /api/categories 304 182ms - IP: ::1[39m
+2025-09-11 11:25:07:257 [35mhttp[39m: [35mGET /api/products 304 2254ms - IP: ::1[39m
+2025-09-11 11:25:08:258 [35mhttp[39m: [35mGET /api/products 304 666ms - IP: ::1[39m
+2025-09-11 12:19:48:1948 [35mhttp[39m: [35mGET /api/auth/profile 304 1641ms - IP: ::1[39m
+2025-09-11 12:19:48:1948 [35mhttp[39m: [35mGET /api/auth/profile 304 198ms - IP: ::1[39m
+2025-09-11 12:19:48:1948 [35mhttp[39m: [35mGET /api/categories 304 1482ms - IP: ::1[39m
+2025-09-11 12:19:49:1949 [35mhttp[39m: [35mGET /api/categories 304 191ms - IP: ::1[39m
+2025-09-11 12:19:49:1949 [35mhttp[39m: [35mGET /api/products 304 2473ms - IP: ::1[39m
+2025-09-11 12:19:50:1950 [35mhttp[39m: [35mGET /api/products 304 686ms - IP: ::1[39m
