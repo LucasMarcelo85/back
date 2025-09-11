@@ -30,3 +30,9 @@
 2025-09-07 11:02:35:235 [31merror[39m: [31mGET /api/dashboard/stats 500 167ms - IP: ::1[39m
 2025-09-07 11:02:36:236 [31merror[39m: [31mGET /api/dashboard/stats 500 170ms - IP: ::1[39m
 2025-09-07 11:02:36:236 [31merror[39m: [31mGET /api/dashboard/stats 500 181ms - IP: ::1[39m
+2025-09-11 19:51:18:5118 [31merror[39m: [31mGET /api/auth/profile 500 3078ms - IP: ::1[39m
+2025-09-11 19:51:18:5118 [31merror[39m: [31mGET /api/categories 500 2869ms - IP: ::1[39m
+2025-09-11 19:51:18:5118 [31merror[39m: [31mGET /api/products 500 2907ms - IP: ::1[39m
+2025-09-11 19:51:21:5121 [31merror[39m: [31mGET /api/auth/profile 500 2925ms - IP: ::1[39m
+2025-09-11 19:51:21:5121 [31merror[39m: [31mGET /api/categories 500 2948ms - IP: ::1[39m
+2025-09-11 19:51:21:5121 [31merror[39m: [31mGET /api/products 500 2963ms - IP: ::1[39m

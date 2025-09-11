@@ -33,9 +33,10 @@ app.use(
 
       // Domínios permitidos em produção
       const allowedOrigins = [
-        "https://backend-front.exzgdz.easypanel.host",
+        "https://backend-front.exzgdz.easypanel.host/", // <-- SUBSTITUA PELA URL REAL DO SEU FRONTEND
         "http://localhost:5173",
         "http://localhost:3000",
+        "https://backend-back.exzgdz.easypanel.host", // Adicionado para permitir requisições da própria API (ex: Swagger UI)
       ];
 
       // Permitir requisições sem origem (ex: aplicações nativas)
