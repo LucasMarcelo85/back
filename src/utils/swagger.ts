@@ -27,7 +27,7 @@ const options: swaggerJsdoc.Options = {
 				description: "Servidor de Desenvolvimento",
 			},
 			{
-				url: "https://backend.closetmodafitness.com",
+				url: "https://backend-back.exzgdz.easypanel.host",
 				description: "Servidor de Produção",
 			},
 		],
