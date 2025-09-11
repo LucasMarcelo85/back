@@ -1,23 +1,27 @@
-# Backend: Node.js + Express + Prisma
-FROM node:20-alpine
+# Etapa 1 - Build
+FROM node:20-alpine AS build
 
-# Diretório de trabalho
 WORKDIR /app
 
-# Copia arquivos de dependência
 COPY package.json package-lock.json* ./
+RUN npm ci
 
-# Instala dependências de produção
+COPY . .
+RUN npx prisma generate
+RUN npm run build
+
+# Etapa 2 - Produção
+FROM node:20-alpine
+
+WORKDIR /app
+
+COPY package.json package-lock.json* ./
 RUN npm ci --only=production
 
-# Copia o restante do código
-COPY . .
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/prisma ./prisma
+COPY --from=build /app/public ./public
 
-# Gera o Prisma Client
-RUN npx prisma generate
-
-# Expõe a porta (use a mesma do seu app, ou PORT do ambiente)
 EXPOSE 3000
 
-# Inicia a aplicação diretamente com node (mais seguro em Docker)
 CMD ["node", "dist/index.js"]
