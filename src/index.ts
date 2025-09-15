@@ -34,7 +34,7 @@ app.use(
       // Domínios permitidos em produção
       const allowedOrigins = [
         "https://loja.gofashion.click",
-        "https://backend-front.exzgdz.easypanel.host", // URL do frontend em produção
+         // URL do frontend em produção
         "http://localhost:5173",
         "http://localhost:3000",
         "https://backend-back.exzgdz.easypanel.host", // URL da própria API (para Swagger UI)
