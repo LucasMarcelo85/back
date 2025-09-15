@@ -26,6 +26,7 @@ app.use(cors({
         }
         // Domínios permitidos em produção
         const allowedOrigins = [
+            "https://loja.gofashion.click",
             "https://backend-front.exzgdz.easypanel.host/",
             "http://localhost:5173",
             "http://localhost:3000",
