@@ -33,7 +33,7 @@ app.use(
 
       // Domínios permitidos em produção
       const allowedOrigins = [
-        "https://loja.gofashion.click",
+        "https://gofashion.click",
          // URL do frontend em produção
         "http://localhost:5173",
         "http://localhost:3000",
