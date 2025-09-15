@@ -7,6 +7,7 @@ import dashboardRoutes from "./routes/dashboardRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import productRoutes from "./routes/productRoutes.js";
 import uploadRoutes from "./routes/uploadRoutes.js";
+import shippingRoutes from "./routes/shippingRoutes.js";
 // Configuração de ambiente
 dotenv.config();
 const PORT = process.env.PORT || 3000;
@@ -26,9 +27,10 @@ app.use(cors({
         }
         // Domínios permitidos em produção
         const allowedOrigins = [
-            "https://backend-front.exzgdz.easypanel.host/",
+            "https://backend-front.exzgdz.easypanel.host", // URL do frontend em produção
             "http://localhost:5173",
             "http://localhost:3000",
+            "https://backend-back.exzgdz.easypanel.host", // URL da própria API (para Swagger UI)
         ];
         // Permitir requisições sem origem (ex: aplicações nativas)
         if (!origin) {
@@ -69,6 +71,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/upload", uploadRoutes);
 app.use("/api/dashboard", dashboardRoutes);
 app.use("/api/orders", orderRoutes);
+app.use("/api/shipping", shippingRoutes);
 // Servir arquivos estáticos da pasta public
 app.use(express.static("public"));
 // Rota para verificação de status
