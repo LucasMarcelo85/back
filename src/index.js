@@ -29,6 +29,7 @@ app.use((0, cors_1.default)({
         // Domínios permitidos em produção
         var allowedOrigins = [
             "https://backend-front.exzgdz.easypanel.host",
+            "https://loja.gofashion.click/", // Adicione a URL do seu frontend de produção aqui
             "http://localhost:5173",
             "http://localhost:3000", // Adicione a URL do seu frontend de produção aqui
         
